@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Styling a SignUp Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="signupFrm">
+    <div class="wrapper">
+    <form action="" class="form">
+    <img src="./images/centennial.jpg" width="50%" style="display:block; clear: both;">
+      <h1 class="title">Sign up</h1>
+
+      <div class="inputContainer">
+        <input type="text" id="fname" class="input" placeholder="a" required>
+        <label for="" class="label">First Name</label>
+      </div>
+      <div class="inputContainer">
+        <input type="text" id="lname" class="input" placeholder="a" required>
+        <label for="" class="label">Last Name</label>
+      </div>
+      <div class="inputContainer">
+        <input type="text" id="address" class="input" placeholder="a" required>
+        <label for="" class="label">Address</label>
+      </div>
+      <div class="inputContainer">
+        <input type="text" id="city" class="input" placeholder="a" required>
+        <label for="" class="label">City</label>
+      </div>
+      <div class="inputContainer">
+        <input type="text" id="postal" class="input" placeholder="a" required>
+        <label for="" class="label">Postal Code</label>        
+      </div>
+      <p id="postalError" class="errorMsg"></p>
+      <div class="inputContainer">
+        <select id="dropdown" name="role" class="input" required>
+            <option disabled selected value>Select Province</option>
+            QC, ON, MN, SK, AB, BC
+            <option value="QC">Quebec</option>
+            <option value="ON">Ontario</option>
+            <option value="MN">Manitoba</option>   
+            <option value="SK">Saskatchewan</option> 
+            <option value="AB">Alberta</option> 
+            <option value="BC">British Columbia</option>       
+            <option value="NB">New Brunswick</option>     
+            <option value="NL">Newfoundland and Labrador</option>  
+            <option value="YU">Yukon</option>
+        </select>
+        <label for="" class="label">Province</label>
+      </div>
+      <div class="inputContainer">
+        <input type="number"  min="18" max="500" class="input" placeholder="a" required>
+        <label for="" class="label">Age</label>
+      </div>
+      <div class="inputContainer">
+        <input type="text" id="uname" class="input" placeholder="a" required>
+        <label for="" class="label">Username</label>        
+      </div>
+      <p id="usernameError" class="errorMsg"></p>
+      <div class="inputContainer">
+        <input type="password" id="pw1" class="input" placeholder="a" required>
+        <label for="" class="label">Password</label>
+      </div>
+
+      <div class="inputContainer">
+        <input type="password" id="pw2" class="input" placeholder="a" required>
+        <label for="" class="label">Confirm Password</label>
+      </div>
+      <p id="passwordError" class="errorMsg"></p>
+      <div class="inputContainer">
+        <input type="email" id="emailbox" class="input" placeholder="a" required>
+        <label for="" class="label">Email</label>
+      </div>
+      <p id="emailError" class="errorMsg"></p>
+      <input type="submit" id="createBtn" class="submitBtn" value="Sign up">
+    </form>
+    </div>
+  </div>
+  <script src="script.js";></script>
+</body>
+</html>
